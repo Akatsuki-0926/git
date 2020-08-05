@@ -7,7 +7,6 @@ package com.qf.pojo;
 public class User {
     private String name;
     private int age;
-    private String address;
 
     public String getName() {
         return name;
@@ -25,11 +24,11 @@ public class User {
         this.age = age;
     }
 
-    public String getAddress() {
-        return address;
+    public User(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public User() {
     }
 }
